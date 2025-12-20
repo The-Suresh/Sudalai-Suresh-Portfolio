@@ -1,5 +1,7 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 import { motion } from "framer-motion";
+
 const SocialSidebar = () => {
     return (
         <motion.div
@@ -11,28 +13,28 @@ const SocialSidebar = () => {
             <motion.a
                 href="https://github.com/The-Suresh"
                 target="_blank"
-                whileHover={{ y: -4, color: "#0071E3" }}
+                whileHover={{ y: -4, color: "#181717" }} // GitHub Color
                 className="transition-colors"
                 title="GitHub"
             >
-                <Github size={24} />
+                <FaGithub size={24} />
             </motion.a>
             <motion.a
                 href="https://www.linkedin.com/in/sudalaisureshp/"
                 target="_blank"
-                whileHover={{ y: -4, color: "#0071E3" }}
+                whileHover={{ y: -4, color: "#0A66C2" }} // LinkedIn Color
                 className="transition-colors"
                 title="LinkedIn"
             >
-                <Linkedin size={24} />
+                <FaLinkedin size={24} />
             </motion.a>
             <motion.a
                 href="mailto:sudalaisuresh333@gmail.com"
-                whileHover={{ y: -4, color: "#0071E3" }}
+                whileHover={{ y: -4, color: "#EA4335" }} // Gmail Color
                 className="transition-colors"
                 title="Email"
             >
-                <Mail size={24} />
+                <SiGmail size={24} />
             </motion.a>
         </motion.div>
     );
