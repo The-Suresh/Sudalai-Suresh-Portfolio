@@ -79,7 +79,7 @@ const Contact = () => {
                                         onChange={handleChange}
                                         required
                                         placeholder="John Doe"
-                                        className="w-full bg-white/5 border border-white/10 rounded-xl py-3 pl-12 pr-4 text-white focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all placeholder:text-secondary/50"
+                                        className="w-full bg-white/90 border border-white/10 rounded-xl py-3 pl-12 pr-4 text-black focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all placeholder:text-gray-500"
                                     />
                                 </div>
                             </div>
@@ -94,7 +94,7 @@ const Contact = () => {
                                         onChange={handleChange}
                                         required
                                         placeholder="john@example.com"
-                                        className="w-full bg-white/5 border border-white/10 rounded-xl py-3 pl-12 pr-4 text-white focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all placeholder:text-secondary/50"
+                                        className="w-full bg-white/90 border border-white/10 rounded-xl py-3 pl-12 pr-4 text-black focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all placeholder:text-gray-500"
                                     />
                                 </div>
                             </div>
@@ -111,7 +111,7 @@ const Contact = () => {
                                     required
                                     rows="4"
                                     placeholder="Tell me about your project..."
-                                    className="w-full bg-white/5 border border-white/10 rounded-xl py-3 pl-12 pr-4 text-white focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all placeholder:text-secondary/50 resize-none"
+                                    className="w-full bg-white/90 border border-white/10 rounded-xl py-3 pl-12 pr-4 text-black focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all placeholder:text-gray-500 resize-none"
                                 />
                             </div>
                         </div>
