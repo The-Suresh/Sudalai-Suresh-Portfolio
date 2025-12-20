@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Send, Mail, User, MessageSquare } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -141,6 +143,35 @@ const Contact = () => {
                                 {status === "error" ? "Something went wrong. Please try again." : status}
                             </p>
                         )}
+
+                        {/* Social Links */}
+                        <div className="flex justify-center gap-6 pt-6 border-t border-white/10 mt-8">
+                            <a
+                                href="https://github.com/The-Suresh"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-secondary hover:text-[#181717] transition-colors transition-transform hover:scale-110"
+                                title="GitHub"
+                            >
+                                <FaGithub size={32} />
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/sudalaisureshp/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-secondary hover:text-[#0A66C2] transition-colors transition-transform hover:scale-110"
+                                title="LinkedIn"
+                            >
+                                <FaLinkedin size={32} />
+                            </a>
+                            <a
+                                href="mailto:sudalaisuresh333@gmail.com"
+                                className="text-secondary hover:text-[#EA4335] transition-colors transition-transform hover:scale-110"
+                                title="Email"
+                            >
+                                <SiGmail size={32} />
+                            </a>
+                        </div>
                     </form>
                 </div>
             </div>
