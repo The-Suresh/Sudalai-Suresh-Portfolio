@@ -19,7 +19,7 @@ const Loader = ({ onComplete }) => {
                     if (onComplete) setTimeout(onComplete, 200); // reduced delay
                     return 100;
                 }
-                return prev + 5; // Much faster increment (approx 0.5s total)
+                return prev + 2; // Slower increment (approx 1.0s total)
             });
         }, 20);
 
@@ -42,7 +42,7 @@ const Loader = ({ onComplete }) => {
                 clearInterval(timer);
             }
 
-            iteration += 1 / 3;
+            iteration += 1 / 2;
         }, 30);
 
         return () => {
