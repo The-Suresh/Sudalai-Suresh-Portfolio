@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import LoadingScreen from "./components/LoadingScreen";
 import SocialSidebar from "./components/SocialSidebar";
+import Cursor from "./components/Cursor";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -19,6 +20,7 @@ function App() {
 
       {!isLoading && (
         <>
+          <Cursor />
           <Background />
           <Navbar />
           <SocialSidebar />
