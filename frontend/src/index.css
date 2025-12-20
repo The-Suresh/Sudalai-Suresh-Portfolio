@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased font-sans overflow-x-hidden transition-colors duration-300;
+  }
+}
+
+:root {
+  --background: 240 10% 96%;
+  /* #F5F5F7 */
+  --foreground: 240 10% 4%;
+  /* #1D1D1F */
+  --card: 0 0% 100%;
+  --secondary: 240 5% 54%;
+  /* #86868b */
+}
+
+.dark {
+  --background: 0 0% 0%;
+  /* Black */
+  --foreground: 0 0% 98%;
+  /* White */
+  --card: 240 10% 4%;
+  --secondary: 240 5% 65%;
+}
+
+.glass {
+  @apply bg-background/60 dark:bg-background/60 backdrop-blur-xl backdrop-saturate-150 border border-white/20 dark:border-white/10 shadow-lg;
+}
+
+.glass-card {
+  @apply bg-white/40 dark:bg-black/40 backdrop-blur-lg backdrop-saturate-150 border border-white/20 dark:border-white/10 shadow-xl rounded-2xl;
+}
+
+.glass-hover {
+  @apply hover:bg-white/80 dark:hover:bg-black/80 transition-all duration-300;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-secondary/30 rounded-full hover:bg-secondary/50 transition-colors;
+}
+
+/* Text Gradients */
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+}
