@@ -16,7 +16,7 @@ const Loader = ({ onComplete }) => {
             setProgress((prev) => {
                 if (prev >= 100) {
                     clearInterval(progressTimer);
-                    setTimeout(onComplete, 200); // reduced delay
+                    if (onComplete) setTimeout(onComplete, 200); // reduced delay
                     return 100;
                 }
                 return prev + 5; // Much faster increment (approx 0.5s total)

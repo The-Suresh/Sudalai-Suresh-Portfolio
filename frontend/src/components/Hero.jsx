@@ -2,7 +2,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import { ArrowRight, Download } from 'lucide-react';
 
-import profileImg from '../assets/Suresh.png'; // Updated to match filename case
+import profileImg from '../assets/Suresh.avif'; // Updated to match filename case
 
 const Hero = () => {
     return (
