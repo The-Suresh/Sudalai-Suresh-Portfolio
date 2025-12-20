@@ -10,12 +10,19 @@ import SocialSidebar from "./components/SocialSidebar";
 import Cursor from "./components/Cursor";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(() => {
+    return !sessionStorage.getItem("hasVisited");
+  });
+
+  const handleLoadingComplete = () => {
+    setIsLoading(false);
+    sessionStorage.setItem("hasVisited", "true");
+  };
 
   return (
     <Router>
       <AnimatePresence mode="wait">
-        {isLoading && <LoadingScreen onComplete={() => setIsLoading(false)} />}
+        {isLoading && <LoadingScreen onComplete={handleLoadingComplete} />}
       </AnimatePresence>
 
       {!isLoading && (
