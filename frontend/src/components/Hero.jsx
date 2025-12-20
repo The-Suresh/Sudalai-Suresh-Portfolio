@@ -2,7 +2,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import { ArrowRight, Download } from 'lucide-react';
 
-import profileImg from '../assets/suresh.png'; // Ensure you have suresh.png in client/src/assets
+import profileImg from '../assets/Suresh.png'; // Updated to match filename case
 
 const Hero = () => {
     return (
