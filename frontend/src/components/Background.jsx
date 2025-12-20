@@ -7,7 +7,7 @@ const MovingBlob = ({ className, delay }) => {
 
     return (
         <motion.div
-            className={`absolute rounded-full mix-blend-multiply filter blur-3xl opacity-40 dark:opacity-20 animate-blob ${className}`}
+            className={`absolute rounded-full mix-blend-multiply filter blur-3xl opacity-40 dark:opacity-20 animate-blob will-change-transform ${className}`}
             animate={{
                 x: [0, 100, -100, 0],
                 y: [0, -100, 100, 0],
